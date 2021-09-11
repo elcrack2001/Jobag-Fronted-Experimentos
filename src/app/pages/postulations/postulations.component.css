@@ -1,0 +1,22 @@
+.mat-stepper-horizontal {
+  margin-top: 8px;
+}
+
+.mat-form-field {
+  margin-top: 16px;
+}
+
+.mat-stepper-horizontal{
+
+  height: 100%;
+  width: 50%;
+
+  margin: auto;
+  background: lightblue;
+
+}
+
+.container{
+
+}
+
