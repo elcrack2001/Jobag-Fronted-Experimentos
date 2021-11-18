@@ -11,7 +11,7 @@ import {ProfilePostulant} from "../models/profile-postulant";
 export class ProfilepostulantService {
 
   //Postulants Endpoint
-  basePath = ' https://jobagapi.herokuapp.com/api/postulants/';
+  basePath = 'http://jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com/api/postulants';
   //HTTP Default Options
 
   httpOptions = {headers: new HttpHeaders({'Content-Type': 'aplication/json'})}

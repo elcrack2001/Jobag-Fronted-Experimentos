@@ -17,7 +17,7 @@ export class ModifyProfessionalProfileApiService {
   constructor(private http: HttpClient) {
   }
 
-  private url: string = "https://jobagapi.herokuapp.com/api/postulants"
+  private url: string = "http://jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com/api/postulants"
 
   httpOptions = {headers: new HttpHeaders({'Content-Type': 'application/json'})};
 

@@ -9,7 +9,7 @@ import {MatChipInputEvent} from "@angular/material/chips";
   providedIn: 'root'
 })
 export class LanguagesApiService {
-  private url: string = "https://jobagapi.herokuapp.com/api/languages"
+  private url: string = "http://jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com/api/languages"
   httpOptions = {headers: new HttpHeaders({'Content-Type': 'application/json'})}
   constructor(private http: HttpClient) { }
 

@@ -11,7 +11,7 @@ export class EmployeerService {
 
   constructor(private http: HttpClient) {
   }
-  private url: string = "https://jobagapi.herokuapp.com/api/employeers";
+  private url: string = "http://jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com/api/employeers";
 
   httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json'})};
 // API Error Handling
