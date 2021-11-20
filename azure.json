@@ -1,0 +1,17 @@
+{
+  "hosting": [
+    {
+      "app": {
+        "project": "jobag-fronted",
+        "target": "build",
+        "configuration": "production",
+        "path": "dist/jobag-fronted"
+      },
+      "azureHosting": {
+        "subscription": "e1aa6635-6bed-4b0c-b0bb-d8cee836ff84",
+        "resourceGroupName": "jobag-fronted-static-deploy",
+        "account": "jobagfrontedstatic"
+      }
+    }
+  ]
+}
