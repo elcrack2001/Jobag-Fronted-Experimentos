@@ -28,6 +28,7 @@ import {ModifyCompanyProfileComponent} from "./pages/modify-company-profile/modi
 import {TermsAndConditionsComponent} from "./pages/terms-and-conditions/terms-and-conditions.component";
 import { MypostulantionInformationComponent } from './pages/mypostulantion-information/mypostulantion-information.component';
 import {DialogJobNewComponent} from "./pages/dialog-job-new/dialog-job-new.component";
+import {RecommendationsComponent} from "./pages/recommendations/recommendations.component";
 
 const routes: Routes = [
 
@@ -44,6 +45,7 @@ const routes: Routes = [
   {path:'postulant/:postulantId/interview', component: InterviewPostulantAllComponent},
   {path:'postulant/:postulantId/postulations', component: MypostulationsComponent},
   {path:'postulant/:postulantId/postulations/:jobId',component: MypostulantionInformationComponent},
+  {path:'postulant/:postulantId/recommendations',component: RecommendationsComponent},
   {path:'postulant/:postulantId/myaccount', component : MyAccountPostulantComponent},
   {path:'postulant/:postulantId/modify-personal-information-postulant', component : ModifyPersonalInformationPostulantComponent},
   {path:'joboffer/:jobofferId/employeers/:employeerId', component: MyadInformationComponent},

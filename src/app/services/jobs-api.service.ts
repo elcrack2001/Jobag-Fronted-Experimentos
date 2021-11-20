@@ -50,4 +50,9 @@ export class JobsApiService {
     .pipe(retry(2), catchError(this.handleError));
   }
 
+  getJobsByCategoryId(id: number)
+  {
+    return this.http.get<Job>(`http://jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com/api/categories/${id}/jobOffers`)
+      .pipe(retry(2), catchError(this.handleError));
+  }
 }
