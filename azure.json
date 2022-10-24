@@ -9,7 +9,7 @@
       },
       "azureHosting": {
         "subscription": "e1aa6635-6bed-4b0c-b0bb-d8cee836ff84",
-        "resourceGroupName": "jobag-fronted-static-deploy",
+        "resourceGroupName": "jobag-fronted-static-deploy74",
         "account": "jobagfrontedstatic"
       }
     }
