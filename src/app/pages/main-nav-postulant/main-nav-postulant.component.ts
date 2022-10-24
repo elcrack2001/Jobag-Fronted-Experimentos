@@ -23,7 +23,6 @@ export class MainNavPostulantComponent {
       shareReplay()
     );
   ngOnInit(): void {
-
     this.getPostulantId();
   }
   constructor(private breakpointObserver: BreakpointObserver, private router: Router, private route: ActivatedRoute,private postulantApiService: PostulantService) {

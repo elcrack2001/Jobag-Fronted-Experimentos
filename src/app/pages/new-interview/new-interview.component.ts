@@ -32,7 +32,8 @@ export class NewInterviewComponent implements OnInit {
 
   acepptInterviews: Array<Interviewp> = [];
 
-  constructor(private interviewApiService: NewInterviewApiService, private  interviewservice: InterviewApiService,
+  constructor(private interviewApiService: NewInterviewApiService,
+              private  interviewservice: InterviewApiService,
               private route: ActivatedRoute,
               public dialog: MatDialog,) {
     this.interviewData={} as Interview;
@@ -73,12 +74,15 @@ export class NewInterviewComponent implements OnInit {
 
   acceptInterview() {
 
-    const newInterview = {date_Interview: this.interviewData.date_Interview, final_date_Interview: this.interviewData.final_date_Interview, link_Interview: this.interviewData.link_Interview}
+    const newInterview = {date_Interview: this.interviewData.date_Interview,
+      final_date_Interview: this.interviewData.final_date_Interview,
+      link_Interview: this.interviewData.link_Interview}
+
       for (var i = 0; i < this.postulantjobs.length; i++) {
-
       if (this.postulantjobs[i].prueba === true) {
-
-        this.interviewservice.addInterview(this.postulantjobs[i].idPostulant, this.postulantjobs[i].idJobOffer, newInterview).subscribe((response: any) => {
+        this.interviewservice.addInterview(this.postulantjobs[i].idPostulant,
+          this.postulantjobs[i].idJobOffer,
+          newInterview).subscribe((response: any) => {
 
         });
 

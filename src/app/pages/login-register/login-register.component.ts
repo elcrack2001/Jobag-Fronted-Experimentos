@@ -32,7 +32,12 @@ export class LoginRegisterComponent implements OnInit {
   fecha = new Date();
   employeer: {}
   postulant: {}
-  constructor(private tokenStorageService: TokenStorageService, private authService: AuthService, private usersApi: LoginRegisterService,private employeerApi: EmployeerService, private postulantApi: PostulantService, private router: Router) {
+  constructor(private tokenStorageService: TokenStorageService,
+              private authService: AuthService,
+              private usersApi: LoginRegisterService,
+              private employeerApi: EmployeerService,
+              private postulantApi: PostulantService,
+              private router: Router) {
     this.employeer={}
     this.postulant={}
   }
